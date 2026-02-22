@@ -1,0 +1,17 @@
+name: My First Action
+
+on: [push]  # Triggers on every code push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest  # Free virtual machine to run on
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4  # Grabs your repo files
+
+      - name: 21f2001400@ds.study.iitm.ac.in  # Your required step name
+        run: echo "Hello from Sivasankar's GitHub Action!"
+
+      - name: List files
+        run: ls -la 
+        
